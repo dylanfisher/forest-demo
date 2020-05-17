@@ -4,7 +4,7 @@
 @import "core/mixins";
 
 // Vendor
-@import "vendor/**/*";
+// @import "vendor/**/*";
 
 // Bootstrap 4 Grid
 @import "bootstrap_v4/bootstrap-grid";
@@ -17,10 +17,10 @@
 @import "base/blocks";
 
 // Partials - reusable partials and page elements
-@import "partials/**/*";
+// @import "partials/**/*";
 
 // Blocks - styles that apply to specific blocks
-@import "blocks/**/*";
+// @import "blocks/**/*";
 
 // Pages - styles that apply to specific pages
-@import "pages/**/*";
+// @import "pages/**/*";
