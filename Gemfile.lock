@@ -4,7 +4,7 @@ GIT
   specs:
     forest (0.122.1)
       aws-sdk-s3
-      bootstrap-sass
+      bootstrap (~> 4.3)
       cocoon
       deep_cloneable
       devise
@@ -102,9 +102,10 @@ GEM
     bcrypt (3.1.13)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
-    bootstrap-sass (3.4.1)
-      autoprefixer-rails (>= 5.2.1)
-      sassc (>= 2.0.0)
+    bootstrap (4.4.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     climate_control (0.2.0)
     cocoon (1.2.14)
@@ -214,6 +215,7 @@ GEM
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
     pg (1.2.3)
+    popper_js (1.16.0)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
