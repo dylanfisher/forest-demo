@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= render 'layouts/shared_head' %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'forest/application_public', media: 'all' %>
+    <%= javascript_include_tag 'forest/application_public' %>
+  </head>
+  <body class="<%= @body_classes.try(:join, ' ') %>">
+    <%= render 'shared/header' %>
+    <main id="application-wrapper" class="application-wrapper d-flex flex-column">
+      <%= yield %>
+    </main>
+    <%= render 'shared/footer' %>
+  </body>
+</html>
