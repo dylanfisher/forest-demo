@@ -1,7 +1,7 @@
-# This migration comes from forest_engine (originally 20170109175932)
+# This migration comes from forest (originally 20170109175932)
 class CreateBlockKinds < ActiveRecord::Migration[5.0]
   def change
-    create_table :block_kinds do |t|
+    create_table :forest_block_kinds do |t|
       t.string :name
       t.text :description
       t.string :category
@@ -9,7 +9,7 @@ class CreateBlockKinds < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
-    add_index :block_kinds, :name, unique: true
-    add_index :block_kinds, :category
+    add_index :forest_block_kinds, :name, unique: true
+    add_index :forest_block_kinds, :category
   end
 end

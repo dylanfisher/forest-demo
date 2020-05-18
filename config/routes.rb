@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'pages#show'
+  root to: 'forest/pages#show'
   get '/home', to: redirect('/')
 end
