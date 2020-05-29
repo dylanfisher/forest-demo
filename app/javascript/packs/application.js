@@ -20,4 +20,4 @@ import 'regenerator-runtime/runtime'
 
 import '../scss/application.scss'
 
-console.log('Hello World from Webpacker')
+console.log('Hello World from Webpacker host app')
