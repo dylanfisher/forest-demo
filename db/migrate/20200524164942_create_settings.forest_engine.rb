@@ -1,7 +1,7 @@
-# This migration comes from forest (originally 20161219033747)
+# This migration comes from forest_engine (originally 20161219033747)
 class CreateSettings < ActiveRecord::Migration[5.0]
   def change
-    create_table :forest_settings do |t|
+    create_table :settings do |t|
       t.string :title
       t.string :slug
       t.text :value
@@ -10,6 +10,6 @@ class CreateSettings < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
-    add_index :forest_settings, :slug, unique: true
+    add_index :settings, :slug, unique: true
   end
 end
