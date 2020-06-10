@@ -74,14 +74,9 @@ ActiveRecord::Schema.define(version: 2020_05_24_164964) do
     t.string "alternative_text"
     t.text "description"
     t.text "dimensions"
-    t.string "attachment_file_name"
-    t.string "attachment_content_type"
-    t.bigint "attachment_file_size"
-    t.datetime "attachment_updated_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "media_item_status", default: 0
-    t.index ["attachment_content_type"], name: "index_media_items_on_attachment_content_type"
     t.index ["created_at"], name: "index_media_items_on_created_at"
     t.index ["media_item_status"], name: "index_media_items_on_media_item_status"
     t.index ["slug"], name: "index_media_items_on_slug", unique: true

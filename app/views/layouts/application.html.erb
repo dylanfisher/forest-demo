@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="<%= @html_classes.try(:join, ' ') %>">
   <head>
     <%#= render 'layouts/shared_head' %>
     <%= csp_meta_tag %>
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </head>
-  <body class="<%= @body_classes.try(:join, ' ') %>">
+  <body>
     <%= render 'shared/header' %>
     <main id="application-wrapper" class="application-wrapper d-flex flex-column">
       <%= yield %>
