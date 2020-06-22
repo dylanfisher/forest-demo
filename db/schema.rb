@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_24_164964) do
+ActiveRecord::Schema.define(version: 2020_06_22_191454) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,15 +56,6 @@ ActiveRecord::Schema.define(version: 2020_05_24_164964) do
     t.index ["block_layout_id"], name: "index_block_slots_on_block_layout_id"
     t.index ["block_record_type", "block_record_id"], name: "index_block_slots_on_block_record_type_and_block_record_id"
     t.index ["block_type", "block_id"], name: "index_block_slots_on_block_type_and_block_id"
-  end
-
-  create_table "cache_records", id: :serial, force: :cascade do |t|
-    t.integer "cacheable_id"
-    t.string "cacheable_type"
-    t.jsonb "data"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["cacheable_type", "cacheable_id"], name: "index_cache_records_on_type_and_id"
   end
 
   create_table "media_items", id: :serial, force: :cascade do |t|
@@ -124,15 +115,6 @@ ActiveRecord::Schema.define(version: 2020_05_24_164964) do
     t.string "locale"
     t.index ["locale", "slug"], name: "index_settings_on_locale_and_slug", unique: true
     t.index ["locale"], name: "index_settings_on_locale"
-  end
-
-  create_table "translations", force: :cascade do |t|
-    t.string "key", null: false
-    t.text "value", null: false
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["key"], name: "index_translations_on_key", unique: true
   end
 
   create_table "user_groups", id: :serial, force: :cascade do |t|
