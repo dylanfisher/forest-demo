@@ -1,5 +1,7 @@
-PATH
-  remote: ../forest
+GIT
+  remote: https://github.com/dylanfisher/forest.git
+  revision: ae5a999f22f1df73c5491b8749b4b490f35c70af
+  branch: v2
   specs:
     forest (2.0.0)
       aws-sdk-s3
