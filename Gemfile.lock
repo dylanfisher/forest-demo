@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dylanfisher/forest.git
-  revision: afc0b9d7efb27d78000774891d90897267ea23e2
+  revision: 6fa5fe3e01ca318dbd0e008a2e6239b825ccc14d
   branch: v2
   specs:
     forest (2.0.0)
@@ -281,7 +281,7 @@ GEM
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.3.0)
+    zeitwerk (2.3.1)
 
 PLATFORMS
   ruby
