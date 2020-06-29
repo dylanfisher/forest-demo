@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_22_191454) do
+ActiveRecord::Schema.define(version: 2020_06_28_210219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -115,6 +115,13 @@ ActiveRecord::Schema.define(version: 2020_06_22_191454) do
     t.string "locale"
     t.index ["locale", "slug"], name: "index_settings_on_locale_and_slug", unique: true
     t.index ["locale"], name: "index_settings_on_locale"
+  end
+
+  create_table "text_blocks", force: :cascade do |t|
+    t.string "title"
+    t.text "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "user_groups", id: :serial, force: :cascade do |t|
