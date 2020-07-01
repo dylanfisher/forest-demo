@@ -1,17 +1,17 @@
-class TextBlock < BaseBlock
+class TitleBlock < BaseBlock
   def self.permitted_params
-    [:title, :text]
+    [:title]
   end
 
   def self.display_name
-    'Text Block'
+    'Title Block'
   end
 
   def self.description
-    'A simple text block'
+    'A general-purpose title block'
   end
 
   def self.display_icon_name
-    'card-text'
+    'type-h1'
   end
 end

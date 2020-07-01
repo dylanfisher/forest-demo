@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_28_210219) do
+ActiveRecord::Schema.define(version: 2020_07_01_035611) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2020_06_28_210219) do
 
   create_table "block_kinds", id: :serial, force: :cascade do |t|
     t.string "name"
-    t.text "description"
     t.string "category"
     t.boolean "active", default: true, null: false
     t.datetime "created_at", null: false
@@ -120,6 +119,12 @@ ActiveRecord::Schema.define(version: 2020_06_28_210219) do
   create_table "text_blocks", force: :cascade do |t|
     t.string "title"
     t.text "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "title_blocks", force: :cascade do |t|
+    t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
