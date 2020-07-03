@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_01_035611) do
+ActiveRecord::Schema.define(version: 2020_07_03_181209) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 2020_07_01_035611) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "media_item_status", default: 0
+    t.jsonb "attachment_data"
     t.index ["created_at"], name: "index_media_items_on_created_at"
     t.index ["media_item_status"], name: "index_media_items_on_media_item_status"
     t.index ["slug"], name: "index_media_items_on_slug", unique: true
