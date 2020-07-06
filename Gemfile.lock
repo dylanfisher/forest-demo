@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dylanfisher/forest.git
-  revision: fb5cfa624ea498495f92092095c378e35e3c694b
+  revision: b7ffa53241c94272a850a6f9a193efbe98cab3ff
   branch: v2
   specs:
     forest (2.0.0)
@@ -20,6 +20,7 @@ GIT
       redcarpet
       shrine (~> 3.0)
       simple_form
+      uppy-s3_multipart (~> 0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -245,6 +246,8 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    roda (3.33.0)
+      rack
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -281,6 +284,10 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
+    uppy-s3_multipart (0.3.4)
+      aws-sdk-s3 (~> 1.0)
+      content_disposition (~> 1.0)
+      roda (>= 2.27, < 4)
     warden (1.2.8)
       rack (>= 2.0.6)
     webpacker (5.1.1)

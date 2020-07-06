@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_03_181209) do
+ActiveRecord::Schema.define(version: 2020_07_05_213828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,16 @@ ActiveRecord::Schema.define(version: 2020_07_03_181209) do
     t.index ["block_layout_id"], name: "index_block_slots_on_block_layout_id"
     t.index ["block_record_type", "block_record_id"], name: "index_block_slots_on_block_record_type_and_block_record_id"
     t.index ["block_type", "block_id"], name: "index_block_slots_on_block_type_and_block_id"
+  end
+
+  create_table "divider_blocks", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "image_blocks", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "media_items", id: :serial, force: :cascade do |t|
