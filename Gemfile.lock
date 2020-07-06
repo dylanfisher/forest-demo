@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dylanfisher/forest.git
-  revision: b7ffa53241c94272a850a6f9a193efbe98cab3ff
+  revision: cf297482c11ad5c2bd089ce2beb744393f7aa8d2
   branch: v2
   specs:
     forest (2.0.0)
