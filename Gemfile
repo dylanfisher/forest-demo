@@ -15,6 +15,7 @@ gem 'autoprefixer-rails'
 gem 'dalli'
 gem 'rack-cors', require: 'rack/cors'
 gem 'jquery-ui-rails'
+gem 'sucker_punch', '~> 2.0'
 
 gem 'faker'
 

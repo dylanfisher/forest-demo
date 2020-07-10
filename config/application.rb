@@ -48,6 +48,8 @@ module ForestDemo
       end
     end
 
+    config.active_job.queue_adapter = :sucker_punch
+
     config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
 
     # Disable Zeitwerk autolading of decorator classes

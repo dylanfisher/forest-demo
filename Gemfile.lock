@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dylanfisher/forest.git
-  revision: cf297482c11ad5c2bd089ce2beb744393f7aa8d2
+  revision: 7deb85a4004102057f450bd4f8c4b45a6b55e36a
   branch: v2
   specs:
     forest (2.0.0)
@@ -85,7 +85,7 @@ GEM
     autoprefixer-rails (9.8.4)
       execjs
     aws-eventstream (1.1.0)
-    aws-partitions (1.338.0)
+    aws-partitions (1.341.0)
     aws-sdk-core (3.103.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -94,7 +94,7 @@ GEM
     aws-sdk-kms (1.36.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.73.0)
+    aws-sdk-s3 (1.74.0)
       aws-sdk-core (~> 3, >= 3.102.1)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.1)
@@ -186,7 +186,7 @@ GEM
     multi_json (1.14.1)
     nenv (0.3.0)
     nio4r (2.5.2)
-    nokogiri (1.10.9)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.3)
       nenv (~> 0.1)
@@ -277,6 +277,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sucker_punch (2.1.2)
+      concurrent-ruby (~> 1.0)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -295,7 +297,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.2)
+    websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     zeitwerk (2.3.1)
@@ -321,6 +323,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   spring
   spring-watcher-listen
+  sucker_punch (~> 2.0)
   uglifier (>= 1.3.0)
   webpacker (~> 5.x)
 
