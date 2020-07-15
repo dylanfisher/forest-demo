@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 ruby '2.7.1'
 
 gem 'forest', git: 'https://github.com/dylanfisher/forest.git', branch: 'v2'
-# gem 'forest', path: '~/projects/forest'
 gem 'rails', '~> 6.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
